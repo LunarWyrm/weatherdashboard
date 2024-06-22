@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+<body class="has-navbar-fixed-top">
+    
+    <h1 class="header is-size-2 is-family-monospace has-text-success has-background-primary-dark" id="headerBar">Weather Dashboard</h1>
+
+    <form class="box container is-pulled-left ml-3" style="top: 10px; width: 33%;" id="cityForm">
+        <label class="is-size-4 is-family-monospace has-text-success" for="cityInput">City Search</label>
+        <br>
+        <input type="text" id="cityInput" name="cityInput" placeholder="Enter a city">
+        <br><br>
+        <button class="button is-primary is-family-monospace" type="button" onclick="captureInput()">Search</button>
+    </form>
+    <div>
+        <div class="box is-align-items-start is-pulled-left m-4" style="width: 62%">
+            <p class="is-size-4 is-family-monospace is-underlined has-text-success">Current Weather In: </p>
+        </div>
+        <div class="section is-relative is-align-items-end is-pulled-left" >
+            <p class="is-size-4 is-family-monospace is-underlined has-text-success">Five Day Forecast</p>
+        </div>
+        <div class="section ml-4">
+            <div class="container is-pulled-right" style="width: 65%">
+                <!-- tables from javascript to display here -->
+                <a class="box" style="width: 150px"></a>
+                <a class="box" style="width: 150px"></a>
+                <a class="box" style="width: 150px"></a>
+                <a class="box" style="width: 150px"></a>
+                <a class="box" style="width: 150px"></a>
+            </div>
+        </div>
+        <div class="container is-pulled-left ml-3" style="top: 31%; width: 33%; position: absolute;">
+            <nav class="panel is-align-items-start">
+                <p class="panel-heading is-family-monospace has-background-primary-dark">Recent Searches</p>
+                <div class="panel-block" id="recentSearches">
+                </div>
+                <div class="panel-block">
+                <button id="clearSearch" class="button is-primary is-outlined is-fullwidth is-family-monospace" onclick="clearSearches()">
+                    Clear Searches
+                </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
