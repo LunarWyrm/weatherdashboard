@@ -59,7 +59,7 @@ function clearSearches() {
 }
 
 function getGeo() {
-    fetch (`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${api_key}`)
+    fetch (`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${api_key}`)
     .then((res)=>{
         return res.json()
     })
@@ -76,7 +76,7 @@ function getGeo() {
 }
 
 function getWeather(latitude, longitude) {
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${api_key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${api_key}`)
         .then((res) => {
             return res.json();
         })
