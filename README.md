@@ -6,3 +6,4 @@ The entire file of script.js is an effort of collaboration and learning from one
 For populating the data from the weather API we use into an HTML table, I found this post explaining a similar situation.
 https://stackoverflow.com/questions/46157018/dynamically-populate-data-into-table-using-javascript
 
+![alt text](WeatherDashboardScreenshot.PNG)
